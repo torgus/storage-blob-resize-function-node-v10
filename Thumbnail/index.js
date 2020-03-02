@@ -19,6 +19,7 @@ const uploadOptions = { bufferSize: 4 * ONE_MEGABYTE, maxBuffers: 20 };
 const containerName = process.env.BLOB_CONTAINER_NAME;
 const accountName = process.env.AZURE_STORAGE_ACCOUNT_NAME;
 const accessKey = process.env.AZURE_STORAGE_ACCOUNT_ACCESS_KEY;
+const imageWidth = process.env.IMAGE_WIDTH;
 
 const sharedKeyCredential = new SharedKeyCredential(
   accountName,
@@ -32,7 +33,7 @@ const serviceURL = new ServiceURL(
 module.exports = (context, eventGridEvent, inputBlob) => {  
 
   const aborter = Aborter.timeout(30 * ONE_MINUTE);
-  const widthInPixels = 100;
+  const widthInPixels = imageWidth;
   const contentType = context.bindingData.data.contentType;
   const blobUrl = context.bindingData.data.url;
   const blobName = blobUrl.slice(blobUrl.lastIndexOf("/")+1);

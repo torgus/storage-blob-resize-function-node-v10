@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Azure-Samples/storage-blob-resize-function-node-v10.git"
+    "url": "git+https://github.com/Torgus/storage-blob-resize-function-node-v10.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Azure-Samples/storage-blob-resize-function-node-v10/issues"
+    "url": "https://github.com/Torgus/storage-blob-resize-function-node-v10/issues"
   },
-  "homepage": "https://github.com/Azure-Samples/storage-blob-resize-function-node-v10#readme"
+  "homepage": "https://github.com/Torgus/storage-blob-resize-function-node-v10#readme"
 }
